@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" type="image/svg" href="./img/logo.svg">
+    <title>METADRUM</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+</head>
+<body>
+    <div class="fillinA"></div>
+    <canvas id="sceneDrum"></canvas> 
+    <canvas id="sceneTube"></canvas>
+    <div class="fillinB">
+        <div class="loading">
+            <img src="./img/logo.svg" alt="loadingLogo">
+            <p>loading</p>
+        </div>
+    </div>
+    <div class="intro" id="intro"></div>
+    <header class="indexHeader">
+        <a class="logo">
+            <img src="./img/logo.svg" alt="logo">
+        </a>
+        <ul class="navHeader">
+            <li>
+                <label for="search">
+                    <input type="search" name="search" placeholder="search">
+                </label>
+            </li>
+            <li>
+                <a href="index.html" class="refresh">METADRUM</a>
+            </li>
+            <li>
+                <a id="toDrum">ONLINE DRUMMING SYSTEM</a>
+            </li>
+            <li>
+                <a id="toShop">ONLINE SHOP</a>
+            </li>
+            <li>
+                <a class="memSwitch">MEMBER ▽</a>
+                <form class="login">
+                    <h3>Login to your account</h3>
+                    <div class="googleLogin">
+                        <a href="#">
+                            <img src="./img/google.png" alt="googlePic">
+                            Login with google account
+                        </a>
+                        <p>or Login with</p>
+                    </div>
+                    <label for="email">
+                        Email
+                        <input type="email" name="email" id="email" placeholder="metadrum@gmail.com">
+                    </label>
+                    <label for="password">
+                        Password
+                        <input type="password" name="password" id="password">
+                    </label>
+                    <button class="memberSubmit memlogin">Login</button>
+                    <a class="memSwitch">Signup</a>
+                </form>
+                <form class="signup">
+                    <h3>Create your account</h3>
+                    <label for="signupEmail">
+                        Email
+                        <input type="email" name="email" id="signupEmail" placeholder="metadrum@gmail.com">
+                    </label>
+                    <label for="signupPassword">
+                        Password
+                        <input type="password" name="password" id="signupPassword">
+                    </label>
+                    <label for="confirmPassword">
+                        Confirm password
+                        <input type="password" name="password" id="confirmPassword">
+                    </label>
+                    <button class="memberSubmit">Signup</button>
+                    <a class="memSwitch">Login</a>
+                </form>
+                <div class="memberCenter">
+                    <h3>Member Center</h3>
+                    <div class="memberCard">
+                        <p class="memberType">VVVIP</p>
+                        <div class="memberInfo">
+                            <div class="memberPic">
+                                <img src="./img/doge.jpg" alt="memberPic">
+                            </div>
+                            <p class="memberName">Doge</p>
+                        </div>
+                        <p class="memberNumber">0000 0000 0000 5278</p>
+                    </div>
+                    <div class="memberFunction">
+                        <a class="func">
+                            <div class="funcPic">
+                                <img src="./img/paycheck.png" alt="paycheck">
+                            </div>
+                            <p class="funcTitle">Paycheck</p>
+                        </a>
+                        <a class="func">
+                            <div class="funcPic">
+                                <img src="./img/cart.png" alt="cart">
+                            </div>
+                            <p class="funcTitle">Cart</p>
+                        </a>
+                        <a class="func">
+                            <div class="funcPic">
+                                <img src="./img/setting.png" alt="setting">
+                            </div>
+                            <p class="funcTitle">Setting</p>
+                        </a>
+                        <a class="func">
+                            <div class="funcPic">
+                                <img src="./img/contact.png" alt="contact">
+                            </div>
+                            <p class="funcTitle">Contact</p>
+                        </a>
+                    </div>
+                    <ul class="collection">
+                        <li>
+                            <h4>Collection</h4>
+                        </li>
+                        <li>
+                            <div class="collectionPic">
+                                <img src="./img/realInsA.png" alt="realInsA">
+                            </div>
+                            <div class="collectionInfo">
+                                <p>Meinl Classic Custom Splash 12"</p>
+                                <p>Usage count: 12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collectionPic">
+                                <img src="./img/realInsA.png" alt="realInsA">
+                            </div>
+                            <div class="collectionInfo">
+                                <p>Meinl Classic Custom Splash 12"</p>
+                                <p>Usage count: 12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collectionPic">
+                                <img src="./img/realInsA.png" alt="realInsA">
+                            </div>
+                            <div class="collectionInfo">
+                                <p>Meinl Classic Custom Splash 12"</p>
+                                <p>Usage count: 12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collectionPic">
+                                <img src="./img/realInsA.png" alt="realInsA">
+                            </div>
+                            <div class="collectionInfo">
+                                <p>Meinl Classic Custom Splash 12"</p>
+                                <p>Usage count: 12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collectionPic">
+                                <img src="./img/realInsA.png" alt="realInsA">
+                            </div>
+                            <div class="collectionInfo">
+                                <p>Meinl Classic Custom Splash 12"</p>
+                                <p>Usage count: 12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collectionPic">
+                                <img src="./img/realInsA.png" alt="realInsA">
+                            </div>
+                            <div class="collectionInfo">
+                                <p>Meinl Classic Custom Splash 12"</p>
+                                <p>Usage count: 12</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collectionPic">
+                                <img src="./img/realInsA.png" alt="realInsA">
+                            </div>
+                            <div class="collectionInfo">
+                                <p>Meinl Classic Custom Splash 12"</p>
+                                <p>Usage count: 12</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <p>Find Us On</p>
+                <a>
+                    <img src="./img/facebook.png" alt="facebookPic">
+                </a>
+                <a>
+                    <img src="./img/instagram.png" alt="instagramPic">
+                </a>
+                <a>
+                    <img src="./img/twitter.png" alt="twitterPic">
+                </a>
+                <a>
+                    <img src="./img/youtube.png" alt="youtubePic">
+                </a>
+            </li>
+            <li>
+                <a>Privacy & Terms</a>
+                <a>© 2022 METADRUM ALL RIGHTS RESERVED</a>
+                <p>本網站為緯育TibaMe-前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
+            </li>
+        </ul>
+    </header>
+ 
+    <section class="sectionIndex">
+        <h1>METADRUM</h1>
+        <a class="anchor">Start the journey</a>
+    </section>
+    
+    <div class="containerAbout">
+        <section class="aboutIndex">
+            <h2>about metadrum</h2>
+            <p>METADRUM provides "online drumming preview", there are millions of VST sound resourses available, Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quaerat perferendis fuga repellendus recusandae labore id deserunt sint atque ullam magnam veniam expedita ab illum ad iusto, excepturi at, eligendi consequuntur quos. Repellat fugiat.</p>
+            <a class="anchor">Drumming System</a>
+        </section>
+        <a class="anchorRound  anchorRoundL">
+            <span></span>
+            <span>Online Shop</span>
+        </a>
+    </div>
+    
+
+    <div class="containerShop">
+        <div class="shopPicWrap">
+            <div class="shopPicItem">
+                <img src="./img/categoryA.jpg" alt="categoryA">
+            </div>
+            <div class="shopPicItem">
+                <img src="./img/categoryB.jpg" alt="categoryB">
+            </div>
+            <div class="shopPicItem">
+                <img src="./img/categoryC.jpg" alt="categoryC">
+            </div>
+            <div class="shopPicItem">
+                <img src="./img/categoryD.jpg" alt="categoryD">
+            </div>
+        </div>
+        <section class="shopIndex">
+            <div class="shopTitle shopText">
+                <div class="shopTextItem">
+                    <h2>Online Shop</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo expedita optio mollitia perferendis illum rerum eveniet temporibus molestias ducimus.</p>
+                    <a class="anchor">Commodity</a>
+                </div>
+            </div>
+            <div class="shopVst shopText">
+                <div class="shopTextItem">
+                    <h3 class="shopH3">VST plugins</h3>
+                    <p class="shopP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo expedita optio mollitia perferendis illum rerum eveniet temporibus molestias ducimus.</p>
+                </div>
+            </div>
+            <div class="shopGdn shopText">
+                <div class="shopTextItem">
+                    <h3 class="shopH3">Good Neighbor Series</h3>
+                    <p class="shopP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo expedita optio mollitia perferendis illum rerum eveniet temporibus molestias ducimus.</p>
+                </div>
+            </div>
+            <div class="shopIns shopText">
+                <div class="shopTextItem">
+                    <h3 class="shopH3">Instrument</h3>
+                    <p class="shopP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nemo expedita optio mollitia perferendis illum rerum eveniet temporibus molestias ducimus.</p>
+                </div>
+            </div>
+        </section>
+        <a class="anchorRound anchorRoundL">
+            <span></span>
+            <span>About Metadrum</span>
+        </a>
+        <div class="scrollHint">
+            <p>click or scroll</p>
+        </div>
+    </div>
+    
+    <div class="containerCommo">
+        <section class="commoIndex">
+            <canvas id="sceneCommo"></canvas>
+            <div class="commoText">
+                <h4>Mepax Maple Transparent Midnight Black</h4>
+                <p>MPX Maple Snare Drums deliver a warm and sensitive sound with crisp rim shots and a fat backbeat. Their tone and tuning range are well suited to match a variety of playing styles and musical genres.</p>
+                <ol class="commoInfo">
+                    <li>6.5mm Maple Shell</li>
+                    <li>14" x 5-1/2"</li>
+                    <li>Low-Mass Lugs</li>
+                    <li>Transparent Midnight Black finish</li>
+                    <li>Black Hardware</li>
+                    <li>Fully Adjustable Throw-Off</li>
+                    <li>Triple-Flange Hoops</li>
+                    <li>20-Strand Snare Wire</li>
+                </ol>
+            </div>
+        </section>
+        <a class="anchorRound anchorRoundL">
+            <span></span>
+            <span>Online Shop</span>
+        </a>
+    </div>
+
+    <div class="containerStep">
+        <section class="stepIndex">
+            <div class="step stepSelect">
+                <div class="stepText">
+                    <h3>Select Sounds</h3>
+                    <p>You can decide each drum part of your setting, we provide you some basic sounds that are well knowing by drummers. You can also select sounds which you have purchased on our online shop.</p>
+                </div>
+                <div class="stepPic stepSelectPic">
+                    <img src="./img/selectCymbal.jpg" alt="selectCymbal">
+                    <img src="./img/selectDrum.jpg" alt="selectDrum">
+                </div>
+            </div>
+            <div class="step stepExtra">
+                <div class="stepText">
+                    <h3>Extra Settings</h3>
+                    <p>Midi selection provides you a different way to enjoy the sounds, we offer you a one-bar section to enter your drum tab. On the other hand, you can also set a metronome while playing.</p>
+                </div>
+                <div class="stepPic stepExtraPic">
+                    <img src="./img/extraMidi.jpg" alt="extraMidi">
+                    <img src="./img/extraClick.jpg" alt="extraClick">
+                </div>
+            </div>
+            <div class="step stepPlay">
+                <div class="stepText">
+                    <h3>Play Sounds</h3>
+                    <p>Press the relevant key of each drum part to make sounds. On portable device, just hit the button on the screen.</p>
+                </div>
+                <div class="stepPic stepPlayPic">
+                    <img src="./img/playSound.jpg" alt="playSound">
+                </div>
+            </div>
+            <div class="step stepJoin">
+                <div class="stepText">
+                    <h3>Join Us</h3>
+                    <p>We need your support! Join us and give us money, we will return you the best sound resourses throughout the universe. Beside, don't forget to turn the volume up before playing. Enjoy!</p>
+                </div>
+                <div class="stepPic stepJoinPic">
+                    <img src="./img/join.jpg" alt="join">
+                </div>
+            </div>
+        </section>
+        <div class="manulHint">
+                <p>tap or click on the picture to get to the next step</p>
+        </div>
+    </div>
+
+    <main class="ODS">
+        <div class="drkit">
+            <div class="keys">
+                <div data-key="65" data-id="0" class="key">
+                  <kbd>A</kbd>
+                  <span class="sound">tom1</span>
+                </div>
+                <div data-key="83" data-id="1" class="key">
+                  <kbd>S</kbd>
+                  <span class="sound">tom2</span>
+                </div>
+                <div data-key="68" data-id="2" class="key">
+                  <kbd>D</kbd>
+                  <span class="sound">floortom</span>
+                </div>
+                <div data-key="70" data-id="3" class="key">
+                  <kbd>F</kbd>
+                  <span class="sound">snare</span>
+                </div>
+                <div data-key="71" data-id="4" class="key">
+                  <kbd>G</kbd>
+                  <span class="sound">hihat</span>
+                </div>
+                <div data-key="72" data-id="5" class="key">
+                  <kbd>H</kbd>
+                  <span class="sound">kick</span>
+                </div>
+                <div data-key="74" data-id="6" class="key">
+                  <kbd>J</kbd>
+                  <span class="sound">crash</span>
+                </div>
+                <div data-key="75" data-id="7" class="key">
+                  <kbd>K</kbd>
+                  <span class="sound">ride</span>
+                </div>
+            </div>
+            <audio data-key="65" src="sounds/tom1.wav"></audio>
+            <audio data-key="83" src="sounds/tom2.wav"></audio>
+            <audio data-key="68" src="sounds/floortom.wav"></audio>
+            <audio data-key="70" src="sounds/snare.wav"></audio>
+            <audio data-key="71" src="sounds/hihat.wav"></audio>
+            <audio data-key="72" src="sounds/kick.wav"></audio>
+            <audio data-key="74" src="sounds/crash.wav"></audio>
+            <audio data-key="75" src="sounds/ride.wav"></audio>
+            <!-- <script>
+                const oKeys = document.querySelectorAll('.key');
+                const oAudio = document.getElementsByTagName("audio");
+                const oKeyCodeArr = [65, 83, 68,70, 71, 72, 74, 75];
+                
+                oKeys.forEach(function(key,index){ 
+                    key.onmousedown = function(){
+                      key.classList.add('playing');
+                      oAudio[index].currentTime = 0;
+                      oAudio[index].play();
+                    }
+                    key.ontransitionend=function(e){
+                      e.target.classList.remove('playing');
+                    }
+                });
+              
+                function playSound(e){
+                    let keyIndex = oKeyCodeArr.indexOf(e.keyCode);
+                    if(keyIndex == -1){
+                      return;
+                    }else{
+                      oKeys[keyIndex].click();
+                    }
+                }
+              
+                window.addEventListener('keydown', playSound);
+              
+            </script> -->
+            <script>
+                function removeTransition(e) {
+                    e.target.classList.remove('playing');
+                }
+                
+                function playSound(e, index) {
+                    let key;
+                    if(e.type == "keydown"){
+                        key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+                        console.log(key);
+                        if(!key){
+                            return;
+                        }
+                        index = key.dataset.id;
+                        console.log(index);
+                    }else{
+                        key = e.currentTarget;
+                        console.log(key);
+                    }
+                    
+                    audio = document.getElementsByTagName("audio")[index];
+                    audio.currentTime = 0;
+                    audio.play();
+                    key.classList.add('playing');
+                }
+              
+                const keys = Array.from(document.querySelectorAll('.key'));
+                keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+                window.addEventListener('keydown', playSound);
+                keys.forEach((key, index) => key.addEventListener("click", function(e){
+                    playSound(e, index);
+                }));
+            </script>
+        </div>
+        <div class="uiODS">
+            <div class="cymbal control">
+                <div class="cymbalPic controlPic">
+                    <img src="./img/cymbal.png" alt="cymbal-icon">
+                </div>
+                <p>Cymbal</p>
+                <form class="cymbalSelect select">
+                    <select name="hihat" id="hihat">
+                        <optgroup label="Zildjian">
+                            <option value="">hihatA</option>
+                            <option value="">hihatB</option>
+                            <option value="">hihatC</option>
+                            <option value="">hihatD</option>
+                            <option value="">hihatE</option>
+                            <option value="">hihatF</option>
+                        </optgroup>
+                        <optgroup label="Meinl">
+                            <option value="">hihatA</option>
+                            <option value="">hihatB</option>
+                            <option value="">hihatC</option>
+                            <option value="">hihatD</option>
+                            <option value="">hihatE</option>
+                            <option value="">hihatF</option>
+                        </optgroup>
+                        <optgroup label="Sabian">
+                            <option value="">hihatA</option>
+                            <option value="">hihatB</option>
+                            <option value="">hihatC</option>
+                            <option value="">hihatD</option>
+                            <option value="">hihatE</option>
+                            <option value="">hihatF</option>
+                        </optgroup>
+                    </select>
+                    <select name="crash" id="crash">
+                        <optgroup label="Zildjian">
+                            <option value="">crashA</option>
+                            <option value="">crashB</option>
+                            <option value="">crashC</option>
+                            <option value="">crashD</option>
+                            <option value="">crashE</option>
+                            <option value="">crashF</option>
+                        </optgroup>
+                        <optgroup label="Meinl">
+                            <option value="">crashA</option>
+                            <option value="">crashB</option>
+                            <option value="">crashC</option>
+                            <option value="">crashD</option>
+                            <option value="">crashE</option>
+                            <option value="">crashF</option>
+                        </optgroup>
+                        <optgroup label="Sabian">
+                            <option value="">crashA</option>
+                            <option value="">crashB</option>
+                            <option value="">crashC</option>
+                            <option value="">crashD</option>
+                            <option value="">crashE</option>
+                            <option value="">crashF</option>
+                        </optgroup>
+                    </select>
+                    <select name="ride" id="ride">
+                        <optgroup label="Zildjian">
+                            <option value="">rideA</option>
+                            <option value="">rideB</option>
+                            <option value="">rideC</option>
+                            <option value="">rideD</option>
+                            <option value="">rideE</option>
+                            <option value="">rideF</option>
+                        </optgroup>
+                        <optgroup label="Meinl">
+                            <option value="">rideA</option>
+                            <option value="">rideB</option>
+                            <option value="">rideC</option>
+                            <option value="">rideD</option>
+                            <option value="">rideE</option>
+                            <option value="">rideF</option>
+                        </optgroup>
+                        <optgroup label="Sabian">
+                            <option value="">rideA</option>
+                            <option value="">rideB</option>
+                            <option value="">rideC</option>
+                            <option value="">rideD</option>
+                            <option value="">rideE</option>
+                            <option value="">rideF</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
+            <div class="drum control">
+                <div class="drumPic controlPic">
+                    <img src="./img/drum.png" alt="drum-icon">
+                </div>
+                <p>Drum</p>
+                <form class="drumSelect select">
+                    <select name="snare" id="snare">
+                        <optgroup label="DW">
+                            <option value="">snareA</option>
+                            <option value="">snareB</option>
+                            <option value="">snareC</option>
+                            <option value="">snareD</option>
+                            <option value="">snareE</option>
+                            <option value="">snareF</option>
+                        </optgroup>
+                        <optgroup label="Tama">
+                            <option value="">snareA</option>
+                            <option value="">snareB</option>
+                            <option value="">snareC</option>
+                            <option value="">snareD</option>
+                            <option value="">snareE</option>
+                            <option value="">snareF</option>
+                        </optgroup>
+                        <optgroup label="Pearl">
+                            <option value="">snareA</option>
+                            <option value="">snareB</option>
+                            <option value="">snareC</option>
+                            <option value="">snareD</option>
+                            <option value="">snareE</option>
+                            <option value="">snareF</option>
+                        </optgroup>
+                    </select>
+                    <select name="tom1" id="tom1">
+                        <optgroup label="DW">
+                            <option value="">tom1A</option>
+                            <option value="">tom1B</option>
+                            <option value="">tom1C</option>
+                            <option value="">tom1D</option>
+                            <option value="">tom1E</option>
+                            <option value="">tom1F</option>
+                        </optgroup>
+                        <optgroup label="Tama">
+                            <option value="">tom1A</option>
+                            <option value="">tom1B</option>
+                            <option value="">tom1C</option>
+                            <option value="">tom1D</option>
+                            <option value="">tom1E</option>
+                            <option value="">tom1F</option>
+                        </optgroup>
+                        <optgroup label="Pearl">
+                            <option value="">tom1A</option>
+                            <option value="">tom1B</option>
+                            <option value="">tom1C</option>
+                            <option value="">tom1D</option>
+                            <option value="">tom1E</option>
+                            <option value="">tom1F</option>
+                        </optgroup>
+                    </select>
+                    <select name="tom2" id="tom2">
+                        <optgroup label="DW">
+                            <option value="">tom2A</option>
+                            <option value="">tom2B</option>
+                            <option value="">tom2C</option>
+                            <option value="">tom2D</option>
+                            <option value="">tom2E</option>
+                            <option value="">tom2F</option>
+                        </optgroup>
+                        <optgroup label="Tama">
+                            <option value="">tom2A</option>
+                            <option value="">tom2B</option>
+                            <option value="">tom2C</option>
+                            <option value="">tom2D</option>
+                            <option value="">tom2E</option>
+                            <option value="">tom2F</option>
+                        </optgroup>
+                        <optgroup label="Pearl">
+                            <option value="">tom2A</option>
+                            <option value="">tom2B</option>
+                            <option value="">tom2C</option>
+                            <option value="">tom2D</option>
+                            <option value="">tom2E</option>
+                            <option value="">tom2F</option>
+                        </optgroup>
+                    </select>
+                    <select name="floortom" id="floortom">
+                        <optgroup label="DW">
+                            <option value="">floortomA</option>
+                            <option value="">floortomB</option>
+                            <option value="">floortomC</option>
+                            <option value="">floortomD</option>
+                            <option value="">floortomE</option>
+                            <option value="">floortomF</option>
+                        </optgroup>
+                        <optgroup label="Tama">
+                            <option value="">floortomA</option>
+                            <option value="">floortomB</option>
+                            <option value="">floortomC</option>
+                            <option value="">floortomD</option>
+                            <option value="">floortomE</option>
+                            <option value="">floortomF</option>
+                        </optgroup>
+                        <optgroup label="Pearl">
+                            <option value="">floortomA</option>
+                            <option value="">floortomB</option>
+                            <option value="">floortomC</option>
+                            <option value="">floortomD</option>
+                            <option value="">floortomE</option>
+                            <option value="">floortomF</option>
+                        </optgroup>
+                    </select>
+                    <select name="kick" id="kick">
+                        <optgroup label="DW">
+                            <option value="">kickA</option>
+                            <option value="">kickB</option>
+                            <option value="">kickC</option>
+                            <option value="">kickD</option>
+                            <option value="">kickE</option>
+                            <option value="">kickF</option>
+                        </optgroup>
+                        <optgroup label="Tama">
+                            <option value="">kickA</option>
+                            <option value="">kickB</option>
+                            <option value="">kickC</option>
+                            <option value="">kickD</option>
+                            <option value="">kickE</option>
+                            <option value="">kickF</option>
+                        </optgroup>
+                        <optgroup label="Pearl">
+                            <option value="">kickA</option>
+                            <option value="">kickB</option>
+                            <option value="">kickC</option>
+                            <option value="">kickD</option>
+                            <option value="">kickE</option>
+                            <option value="">kickF</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
+            <div class="midi control">
+                <div class="midiPic controlPic">
+                    <img src="./img/midi.png" alt="midi-icon">
+                </div>
+                <p>Midi</p>
+                <form class="midiSelect select">
+                    <div class="hihatbox midiBox">
+                        <p>hihat</p>
+                        <input type="checkbox" name="hihat" id="hihat1" checked>
+                        <input type="checkbox" name="hihat" id="hihat2">
+                        <input type="checkbox" name="hihat" id="hihat3" checked>
+                        <input type="checkbox" name="hihat" id="hihat4">
+                        <input type="checkbox" name="hihat" id="hihat5" checked>
+                        <input type="checkbox" name="hihat" id="hihat6">
+                        <input type="checkbox" name="hihat" id="hihat7" checked>
+                        <input type="checkbox" name="hihat" id="hihat8">
+                        <input type="checkbox" name="hihat" id="hihat9" checked>
+                        <input type="checkbox" name="hihat" id="hihat10">
+                        <input type="checkbox" name="hihat" id="hihat11" checked>
+                        <input type="checkbox" name="hihat" id="hihat12">
+                        <input type="checkbox" name="hihat" id="hihat13" checked>
+                        <input type="checkbox" name="hihat" id="hihat14">
+                        <input type="checkbox" name="hihat" id="hihat15" checked>
+                        <input type="checkbox" name="hihat" id="hihat16">
+                    </div>
+                    <div class="snarebox midiBox">
+                        <p>snare</p>
+                        <input type="checkbox" name="snare" id="snare1">
+                        <input type="checkbox" name="snare" id="snare2">
+                        <input type="checkbox" name="snare" id="snare3">
+                        <input type="checkbox" name="snare" id="snare4">
+                        <input type="checkbox" name="snare" id="snare5" checked>
+                        <input type="checkbox" name="snare" id="snare6">
+                        <input type="checkbox" name="snare" id="snare7">
+                        <input type="checkbox" name="snare" id="snare8">
+                        <input type="checkbox" name="snare" id="snare9">
+                        <input type="checkbox" name="snare" id="snare10">
+                        <input type="checkbox" name="snare" id="snare11">
+                        <input type="checkbox" name="snare" id="snare12">
+                        <input type="checkbox" name="snare" id="snare13" checked>
+                        <input type="checkbox" name="snare" id="snare14">
+                        <input type="checkbox" name="snare" id="snare15">
+                        <input type="checkbox" name="snare" id="snare16">
+                    </div>
+                    <div class="kickbox midiBox">
+                        <p>kick</p>
+                        <input type="checkbox" name="kick" id="kick1" checked>
+                        <input type="checkbox" name="kick" id="kick2">
+                        <input type="checkbox" name="kick" id="kick3">
+                        <input type="checkbox" name="kick" id="kick4">
+                        <input type="checkbox" name="kick" id="kick5">
+                        <input type="checkbox" name="kick" id="kick6">
+                        <input type="checkbox" name="kick" id="kick7">
+                        <input type="checkbox" name="kick" id="kick8">
+                        <input type="checkbox" name="kick" id="kick9" checked>
+                        <input type="checkbox" name="kick" id="kick10">
+                        <input type="checkbox" name="kick" id="kick11">
+                        <input type="checkbox" name="kick" id="kick12">
+                        <input type="checkbox" name="kick" id="kick13">
+                        <input type="checkbox" name="kick" id="kick14">
+                        <input type="checkbox" name="kick" id="kick15">
+                        <input type="checkbox" name="kick" id="kick16">
+                    </div>
+                    <div class="playStart">Play</div>
+                </form>
+            </div>
+            <div class="click control">
+                <div class="clickPic controlPic">
+                    <img src="./img/click.png" alt="click-icon">
+                </div>
+                <p>Click</p>
+                <form class="clickSelect select">
+                    <input type="range" name="click" id="click" min="30" max="240" step="1">
+                    <div class="clickSpeed"></div>
+                    <div class="playStart">Play</div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="rotateWarn">
+        <p>Please rotate your device to continue the trip</p>
+    </div>
+    <script type="module">
+        import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+        import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
+        import { EffectComposer } from 'https://unpkg.com/three/examples/jsm/postprocessing/EffectComposer.js';
+        import { RenderPass } from 'https://unpkg.com/three/examples/jsm/postprocessing/RenderPass.js';
+        import { UnrealBloomPass } from 'https://unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js';
+        import { GLTFLoader } from 'https://unpkg.com/three/examples/jsm/loaders/GLTFLoader.js';
+        import { Lensflare, LensflareElement } from 'https://unpkg.com/three/examples/jsm/objects/Lensflare.js';
+        import { RectAreaLightUniformsLib } from 'https://unpkg.com/three/examples/jsm/lights/RectAreaLightUniformsLib.js';
+        import { TTFLoader } from 'https://unpkg.com/three/examples/jsm/loaders/TTFLoader.js';
+        import { FontLoader } from 'https://unpkg.com/three/examples/jsm/loaders/FontLoader.js';
+        import { TextGeometry } from 'https://unpkg.com/three/examples/jsm/geometries/TextGeometry.js';
+        function $$(id){
+            return document.querySelector(id);
+        }
+        $$('.refresh').addEventListener('click', function(){
+            location.reload();
+        })
+        window.addEventListener('resize', function(){
+            if(window.innerHeight < 500){
+                $$('.rotateWarn').style.display = 'block';
+            }else{
+                $$('.rotateWarn').style.display = 'none';
+            }
+        })
+        $$(".logo").addEventListener('click', function(){
+            if($$(".navHeader").style.left == "0px"){
+                gsap.to($$(".navHeader"), {
+                    left: '-100%',
+                    duration: .5,
+                })
+                $$(".logo").style.animation = "";
+            }else if($$(".navHeader").style.left != "0px"){
+                gsap.to($$(".navHeader"), {
+                    left: 0,
+                    duration: .5,
+                })
+                $$(".logo").style.animation = "logo 1s linear infinite"
+            }
+        })
+        const memberSubmit = document.querySelectorAll('.memberSubmit')
+        memberSubmit.forEach(memberSubmit => addEventListener('click', function(e){
+            e.preventDefault();
+        }))
+        const memSwitch = document.querySelectorAll('a.memSwitch');
+        function memOpen(mem, d){
+            gsap.to(mem, {
+                height: 'auto',
+                duration: .5,
+                delay: d,
+            })
+        }
+        function memClose(mem, d){
+            gsap.to(mem, {
+                height: 0,
+                duration: .5,
+                delay: d,
+            })
+        }
+        memSwitch[0].addEventListener('click', function(){
+            memClose($$('.signup'), 0)
+            if($$('.login').style.height != '0px'){
+                memClose($$('.login'), 0)
+            }else if($$('.memberCenter').style.height != '0px' || $$('.signup').style.height != '0px'){
+                memClose($$('.login'), 0)
+            }else{
+                memOpen($$('.login'), 0)
+            }
+            if($$('.memberCenter').style.height != '0px'){
+                memClose($$('.memberCenter'), 0)
+            }
+        })
+        memSwitch[1].addEventListener('click', function(){
+            memClose($$('.login'), 0)
+            memOpen($$('.signup'), 0)
+        })
+        memSwitch[2].addEventListener('click', function(){
+            memClose($$('.signup'), 0)
+            memOpen($$('.login'), 0)
+        })
+        $$('.memlogin').addEventListener('click', function(){
+            memClose($$('.signup'), 0)
+            memClose($$('.login'), 0)
+            memOpen($$('.memberCenter'), 0)
+        })
+        const ShopPic = document.querySelectorAll('.shopPicItem');
+        const ShopTextItem = document.querySelectorAll('.shopTextItem');
+        const ShopText = document.querySelectorAll('.shopText');
+        const ShopH2 = document.querySelectorAll('.shopTextItem h2');
+        const ShopH3 = document.querySelectorAll('.shopH3');
+        const ShopP = document.querySelectorAll('.shopP');
+        
+        ShopText[0].addEventListener('click', function(){
+            gsap.to($$('.shopIndex'), {
+                scrollTop: $$('.shopIndex').offsetHeight,
+                duration: .5,
+            })
+        })
+        ShopText[1].addEventListener('click', function(){
+            gsap.to($$('.shopIndex'), {
+                scrollTop: $$('.shopIndex').offsetHeight*2,
+                duration: .5,
+            })
+        })
+        ShopText[2].addEventListener('click', function(){
+            gsap.to($$('.shopIndex'), {
+                scrollTop: $$('.shopIndex').offsetHeight*3,
+                duration: .5,
+            })
+        })
+        ShopText[3].addEventListener('click', function(){
+            gsap.to($$('.shopIndex'), {
+                scrollTop: 0,
+                duration: .5,
+            })
+        })
+        
+        function wordIn(e){
+            gsap.to(e, {
+                opacity: 1,
+                y: 20,
+                clipPath: `polygon(0 0, 100% 0, 100% 100%, 0 100%)`,
+                duration: 1,
+            })
+        }
+        function wordFade(e){
+            gsap.to(e, {
+                opacity: 0,
+                y: -20,
+                clipPath: `polygon(0 0, 100% 0, 100% 0, 0 0)`,
+                duration: 1,
+            })
+        }
+        
+        $$('.shopIndex').addEventListener('scroll', function(){
+            let scrollValue = (-($$('.shopPicItem').offsetHeight*3+240) / ($$('.shopIndex').offsetHeight*3)) * $$('.shopIndex').scrollTop;
+            ShopPic[0].style.marginTop = scrollValue + 'px';
+
+            let containerTop = $$('.shopIndex').scrollTop;
+            let itemH = $$('.shopIndex').offsetHeight;
+            //文字
+            if(containerTop >= 0 && containerTop <= itemH*.5){
+                wordIn(ShopH2);
+                wordIn($$('.shopTitle p'));
+                wordIn($$('.shopTitle a'));
+            }else{
+                wordFade(ShopH2);
+                wordFade($$('.shopTitle p'));
+                wordFade($$('.shopTitle a'));
+            };
+            if(containerTop >= 0 && containerTop <= itemH*.25){
+                wordIn(ShopH2);
+                wordIn($$('.shopTitle p'));
+            }else{
+                wordFade(ShopH2);
+                wordFade($$('.shopTitle p'));
+            }
+            if(containerTop > 0 && containerTop < itemH*.75){
+                wordFade(ShopH3[0]);
+                wordFade(ShopP[0]);
+            }else if(containerTop > itemH*.75 && containerTop < itemH){
+                wordIn(ShopH3[0]);
+                wordIn(ShopP[0]);
+            }else if(containerTop > itemH && containerTop < itemH*1.5){
+                wordFade(ShopH3[0]);
+                wordFade(ShopP[0]);
+            }else if(containerTop > itemH*1.5 && containerTop < itemH*1.75){
+                wordFade(ShopH3[1]);
+                wordFade(ShopP[1]);
+            }else if(containerTop > itemH*1.75 && containerTop < itemH*2){
+                wordIn(ShopH3[1]);
+                wordIn(ShopP[1]);
+            }else if(containerTop > itemH*2 && containerTop < itemH*2.75){
+                wordFade(ShopH3[1]);
+                wordFade(ShopP[1]);
+                wordFade(ShopH3[2]);
+                wordFade(ShopP[2]);
+            }else if(containerTop > itemH*2.75 && containerTop < itemH*3){
+                wordIn(ShopH3[2]);
+                wordIn(ShopP[2]);
+            }
+
+            /* let scrollCorrect = Math.cos(1.396)*scrollValue;
+            if(window.innerWidth < 1024){
+                $$('.shopPicWrap').style.right = scrollCorrect/15 + 'px';
+                console.log($$('.shopPicWrap').style.right)
+            } */
+
+            //背景
+            if($$('.shopIndex').scrollTop >= 0 && $$('.shopIndex').scrollTop <= ($$('.shopPicItem').offsetHeight*3)){
+                gsap.to($$('.fillinA'), {
+                    background: `linear-gradient(${$$('.shopIndex').scrollTop/3}deg, #6a11cb, #2575fc)`,
+                    duration: .5,
+                })
+            }else if($$('.shopIndex').scrollTop > ($$('.shopPicItem').offsetHeight*3)){
+                gsap.to($$('.fillinA'), {
+                    background: `linear-gradient(${$$('.shopIndex').scrollTop/3}deg, #c471f5, #fa71cd)`,
+                    duration: .5,
+                })
+            }
+            //圖片
+            for(let i=0; i<4; i++){
+                if(window.innerWidth < 1024 && ShopPic[i].offsetTop >= -40 && ShopPic[i].offsetTop <= 120){
+                    gsap.to(ShopPic[i], {
+                        transformOrigin: `center center`,
+                        translateZ: '0px',
+                        rotateX: '0deg',
+                        scale: 1.2,
+                        boxShadow: `5px 5px 20px 5px #000a`,
+                        opacity: 1,
+                        duration: .5,
+                    })
+                }else if(window.innerWidth < 1024 && ShopPic[i].offsetTop < -40){
+                    gsap.to(ShopPic[i], {
+                        transformOrigin: `center center`,
+                        translateZ: '0px',
+                        rotateX: '0deg',
+                        scale: 1,
+                        boxShadow: `none`,
+                        opacity: .6,
+                        duration: .5,
+                    })
+                }else if(window.innerWidth < 1024 && ShopPic[i].offsetTop > 120){
+                    gsap.to(ShopPic[i], {
+                        transformOrigin: `center center`,
+                        translateZ: '0px',
+                        rotateX: '0deg',
+                        scale: 1,
+                        boxShadow: `none`,
+                        opacity: .6,
+                        duration: .5,
+                    })
+                }
+
+                if(window.innerWidth > 1024 && ShopPic[i].offsetTop >= -80 && ShopPic[i].offsetTop <= 120){
+                    gsap.to(ShopPic[i], {
+                        transformOrigin: `center center`,
+                        translateZ: '200px',
+                        rotateX: '0deg',
+                        boxShadow: `5px 5px 20px 5px #000a`,
+                        opacity: 1,
+                        scale: 1,
+                        duration: .5,
+                    })
+                }else if(window.innerWidth > 1024 && ShopPic[i].offsetTop < -80 && ShopPic[i].offsetTop > -600){
+                    gsap.to(ShopPic[i], {
+                        transformOrigin: `center center`,
+                        translateZ: '0px',
+                        boxShadow: `3px 3px 10px 3px #000a`,
+                        opacity: .6,
+                        duration: .5,
+                        scale: 1,
+                        rotateX: '15deg',
+                    })
+                }else if(window.innerWidth > 1024 && ShopPic[i].offsetTop < -600){
+                    gsap.to(ShopPic[i], {
+                        transformOrigin: `center bottom`,
+                        translateZ: '-100px',
+                        boxShadow: `none`,
+                        opacity: .3,
+                        duration: .5,
+                        scale: 1,
+                        rotateX: '45deg',
+                    })
+                }else if(window.innerWidth > 1024 && ShopPic[i].offsetTop > 120){
+                    gsap.to(ShopPic[i], {
+                        transformOrigin: `center center`,
+                        translateZ: '0px',
+                        boxShadow: `3px 3px 10px 3px #000a`,
+                        opacity: .6,
+                        duration: .5,
+                        scale: 1,
+                        rotateX: '-15deg',
+                    })
+                }
+            }
+        })  
+        const stepPicTime = gsap.timeline({
+            repeat: -1,
+            repeatDelay: 2,
+        })
+        stepPicTime.to($$('.stepSelectPic'), {
+            scrollTop: $$('.stepSelectPic img').offsetHeight,
+            duration: .5,
+        })
+        stepPicTime.to($$('.stepSelectPic'), {
+            scrollTop: 0,
+            duration: .5,
+        }, 3)
+        const stepPicTimeB = gsap.timeline({
+            repeat: -1,
+            repeatDelay: 2,
+        })
+        stepPicTimeB.to($$('.stepExtraPic'), {
+            scrollTop: $$('.stepExtraPic img').offsetHeight,
+            duration: .5,
+        })
+        stepPicTimeB.to($$('.stepExtraPic'), {
+            scrollTop: 0,
+            duration: .5,
+        }, 3)
+        $$('.stepSelectPic')
+        const check = document.querySelectorAll('.midiBox input')
+        check.forEach(input => input.addEventListener('click', function(e){
+            if(e.target.style.background == 'rgb(250, 113, 205)'){
+                gsap.to(e.target, {
+                background: 'transparent',
+                duration: 0,
+            })
+            }else{
+                gsap.to(e.target, {
+                    background: '#fa71cd',
+                    duration: 0,
+                })
+            }
+        }))
+        const anchorRound = document.querySelectorAll('.anchorRound')
+        const anchor = document.querySelectorAll('.anchor')
+        
+        let ww = window.innerWidth,
+            wh = window.innerHeight;
+        //------sceneTube------//
+        function tubeInit(){
+            // 場景
+            let scene = new THREE.Scene();
+            scene.fog = new THREE.Fog( scene.background, 3500, 15000 );
+            //渲染器
+            let renderer = new THREE.WebGLRenderer({
+                canvas: document.querySelector("#sceneTube"),
+            });
+            renderer.setSize(ww, wh);
+            // 相機
+            let camera = new THREE.PerspectiveCamera(60, ww / wh, 0.001, 10000);
+            camera.position.z = 100;
+            //創建光暈渲染
+            const renderScene = new RenderPass(scene, camera);
+            const bloomPass = new UnrealBloomPass(
+                new THREE.Vector2(ww, wh),
+                1.5,
+                0.4,
+                0.85,
+            )
+            bloomPass.threshold = 0;
+            bloomPass.strength = 2;
+            bloomPass.radius = 0;
+            const bloomComposer = new EffectComposer(renderer);
+            bloomComposer.setSize(ww, wh);
+            bloomComposer.renderToScreen = true;
+            bloomComposer.addPass(renderScene);
+            bloomComposer.addPass(bloomPass);
+            // 軌道節點陣列
+            let points = new Array(10);
+            // 設定節點隨機座標
+            let x, y, z;
+            for (let i = 0; i < points.length; i++) {
+                
+                x = Math.random()*500-250;
+                y = Math.random()*500-250;
+                z = Math.random()*500-250;
+                points[i] = new THREE.Vector3(x, y, z);
+            }
+            points[9] = points[0];
+            let path = new THREE.CatmullRomCurve3(points);
+            //創建軌道
+            let colors = [0xfa71cd,0x4e5572,0x322b5b];
+            for(let i=0;i<colors.length;i++){
+                var geometry = new THREE.TubeBufferGeometry( path, 600, (i*2)+3, 3, true );
+                var material = new THREE.MeshPhongMaterial({
+                    color:colors[i],
+                    transparent:true,
+                    wireframe:true,
+                    opacity : ((1- i/5)*0.5 + 0.1),
+                    emissive: colors[i],
+                    emissiveIntensity: .5,
+                });
+                let tube = new THREE.Mesh( geometry, material );
+                scene.add( tube );
+            }
+            //創建隨機球體、環
+            let group = new THREE.Group();
+            for (let i = 0; i < 500; i++) {
+                var stoneRadius = Math.random()*7;
+                var stone = new THREE.IcosahedronGeometry(stoneRadius, 15);
+                var r = 'abcde';
+                var R;
+                for (let j = 0; j < 2; j++) {
+                    R = r[Math.floor(Math.random()*5)] + r[Math.floor(Math.random()*5)];
+                }
+                var C = Number("0x"+R+R+R);
+                var rN2 = Math.random();
+                var TB = new THREE.MeshPhongMaterial({ color: C });
+                var stones = new THREE.Mesh(stone, TB);
+                var X = Math.random() * 1000-500,
+                    Y = Math.random() * 1000-500,
+                    Z = Math.random() * 1000-500;
+                stones.position.set(X, Y, Z);
+                stones.updateMatrix();
+                stones.matrixAutoUpdate = false;
+                if ( stoneRadius > 6){
+                    var ring = new THREE.RingGeometry(stoneRadius+(rN2*10), stoneRadius+(rN2*20), 32);
+                        ring.rotateX(Math.random());
+                        ring.rotateY(Math.random());
+                        ring.rotateZ(Math.random());
+                    var TC = new THREE.MeshPhongMaterial({
+                        color: 0x778899,
+                        emissive: 0x778899,
+                        emissiveIntensity: rN2,
+                    });
+                    var Ring = new THREE.Mesh(ring, TC);
+                    Ring.material.side = THREE.DoubleSide;
+                    Ring.position.set(X, Y, Z);
+                    Ring.updateMatrix();
+                    Ring.matrixAutoUpdate = false;
+                    group.add(Ring);
+                }
+                group.add(stones);
+            }
+            scene.add(group);
+            function gR() {
+                gsap.to(group.rotation, {
+                    x: -Math.PI * 2,
+                    z: Math.PI * 2,
+                    ease: 'none',
+                    duration: 150,
+                    repeat: -1,
+                })
+            }
+            gR()
+            //粒子
+            const vertices = [];
+            for ( let i = 0; i < 10000; i ++ ) {
+                const x = THREE.MathUtils.randFloatSpread( 2000 );
+                const y = THREE.MathUtils.randFloatSpread( 2000 );
+                const z = THREE.MathUtils.randFloatSpread( 2000 );
+                vertices.push( x, y, z );
+            }
+            const rain = new THREE.BufferGeometry();
+            rain.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
+            const rainT = new THREE.PointsMaterial( { color: 0xc0c0c0 } );
+            const Rain = new THREE.Points( rain, rainT );
+            scene.add( Rain );
+            function rR() {
+                gsap.to(Rain.rotation, {
+                    x: Math.PI * 2,
+                    z: -Math.PI * 2,
+                    ease: 'none',
+                    duration: 300,
+                    repeat: -1,
+                })
+            }
+            rR()
+            //眩光
+            const textureLoader = new THREE.TextureLoader();
+            const textureFlare0 = textureLoader.load( './img/lensflare0.png' );
+			const textureFlare3 = textureLoader.load( './img/lensflare3.png' );
+			addLight( 0.55, 0.9, 0.5, 0, 1000, 0 );
+			addLight( 0.995, 0.5, 0.9, 0, 1000, 0 );
+            function addLight( h, s, l, x, y, z ) {
+                const lightL = new THREE.PointLight( 0xffffff, 1.5, 2000 );
+				lightL.color.setHSL( h, s, l );
+				lightL.position.set( x, y, z );
+				scene.add( lightL );
+                const lensflare = new Lensflare();
+				lensflare.addElement( new LensflareElement( textureFlare0, 70, 0, lightL.color ) );
+				lensflare.addElement( new LensflareElement( textureFlare3, 60, 0.6 ) );
+				lensflare.addElement( new LensflareElement( textureFlare3, 100, 1 ) );
+				lightL.add( lensflare );
+			};
+            //光
+            let light1 = new THREE.AmbientLight(0xffffff, .1);   
+            scene.add(light1);
+            //相機、軌道同步時實
+            let percentage = 0;
+            function render(){
+                percentage += 0.00005;
+                let p1 = path.getPointAt(percentage%1);
+                let p2 = path.getPointAt((percentage + 0.01)%1);
+                camera.position.set(p1.x,p1.y,p1.z);
+                camera.lookAt(p2);
+                renderer.render(scene, camera)
+                bloomComposer.render(scene, camera);
+                requestAnimationFrame(render);
+                resizeTube()
+            }
+            requestAnimationFrame(render);
+            //RWD
+            function resizeTube(){
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                bloomComposer.setSize(window.innerWidth, window.innerHeight);
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+            window.addEventListener('resize', resizeTube())
+        }
+
+
+        
+        function drumInit(){
+            // 渲染器
+            let drumrenderer = new THREE.WebGLRenderer({
+                canvas: document.querySelector("#sceneDrum"),
+                antialias: true,
+            });
+            drumrenderer.shadowMap.enabled = true;
+            drumrenderer.toneMapping = THREE.ACESFilmicToneMapping;
+            drumrenderer.setSize(ww, wh);
+            
+            // 場景
+            let drumscene = new THREE.Scene();
+
+            // 相機
+            let drumcamera = new THREE.PerspectiveCamera(70, ww / wh, 0.001, 1000);
+            drumcamera.position.set(6,.5,6)
+            drumcamera.lookAt(0,.5,0)
+            // 場景物件
+            // drum
+            const loader = new GLTFLoader();
+            const dr = new THREE.Object3D(
+                loader.load('./drum_kit_for_your_band/scene.gltf', function ( gltf ) {
+                    const drObj = gltf.scene;
+                    drObj.position.set(.28, 0, 0);
+                    drObj.scale.set(0.01, 0.01, 0.01)
+                    drObj.rotateY(Math.PI/2);
+                    drObj.traverse(function(node) {
+                        if (node.isMesh) {
+                            node.material.roughness = .5
+                            node.material.metalness = .5
+                            node.material.transparent = false
+                            node.castShadow = true
+                            node.receiveShadow = true
+                        }
+                    })
+                drumscene.add( gltf.scene );
+                }, undefined, function ( error ) {
+                    console.error( error );
+                }
+            ));
+                
+            //floor
+            const floor = new THREE.PlaneGeometry( 6, 6 );
+            floor.rotateX(Math.PI* -0.5);
+            const planeMap = new THREE.TextureLoader().load( './img/planeMap.jpg' );
+            const fT = new THREE.MeshStandardMaterial({
+                color: 0x111111,
+                map: planeMap,
+                roughness: 1,
+                metalness: .4,
+            })
+            const plane = new THREE.Mesh( floor, fT );
+            plane.receiveShadow = true;
+            drumscene.add( plane );
+
+            //字
+            const ttfLoader = new TTFLoader();
+            const fontLoader = new FontLoader();
+            ttfLoader.load('./fonts/FontsFree-Net-Centauri.ttf', (json) => {
+                const cen = fontLoader.parse(json);
+                const title = new TextGeometry('m e t a d r u m', {
+                    height: .1,
+                    size: .4,
+                    font: cen,
+                })
+                const titleMap = new THREE.TextureLoader().load( './img/titleMap.jpg' );
+                const textT = new THREE.MeshStandardMaterial({
+                    color: 0xffffff,
+                    map: titleMap,
+                    roughness: .5,
+                    metalness: .5,
+                });
+                const Title = new THREE.Mesh(title, textT);
+                Title.position.set(-3.52, 3, 1.45);
+                Title.rotateY(Math.PI/4)
+                drumscene.add(Title);
+
+                //平行光
+                const dLight = new THREE.DirectionalLight( 0xffffff, 1 );
+                dLight.position.set( 5, 0, 5 );
+                dLight.target = Title;
+                drumscene.add(dLight);
+                const dLightDrum = new THREE.DirectionalLight( 0xffffff, .5 );
+                dLightDrum.position.set( 0, 2, 0 );
+                drumscene.add(dLightDrum);
+            })
+            //粒子
+            const vertices = [];
+            for ( let i = 0; i < 1000; i ++ ) {
+                const x = THREE.MathUtils.randFloatSpread( 20 );
+                const y = THREE.MathUtils.randFloatSpread( 20 );
+                const z = THREE.MathUtils.randFloatSpread( 20 );
+                vertices.push( x, y, z );
+            };
+            const dust = new THREE.BufferGeometry();
+            dust.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
+            const dustT = new THREE.PointsMaterial( {
+                color: 0xffffff,
+                size: 0.02,
+            } );
+            const Dust = new THREE.Points( dust, dustT );
+
+            drumscene.add( Dust );
+            function RR(e){
+                let x = e.pageX / window.innerWidth / 2;
+                let z = e.pageY / window.innerHeight / 2 ;
+                gsap.to(Dust.rotation, {
+                    x,
+                    z,
+                });
+            };
+            window.addEventListener('mousemove', RR);
+            window.addEventListener('touchmove', RR)
+            
+
+            //點光源
+            const textureFlare0 = new THREE.TextureLoader().load( './img/lensflare1.jpg' );
+            const textureFlare3 = new THREE.TextureLoader().load( './img/lensflare3.png' );
+            function addLight( x, y, z ) {
+                const lightL = new THREE.PointLight( 0xb0b8db, 100, 10 );
+                lightL.position.set( x, y, z );
+                drumscene.add( lightL );
+                const lensflare = new Lensflare();
+                lensflare.addElement( new LensflareElement( textureFlare0, 200, 0, lightL.color ) );
+                lensflare.addElement( new LensflareElement( textureFlare3, 100, 0.6 ) );
+                lensflare.addElement( new LensflareElement( textureFlare3, 300, 1 ) );
+                lightL.add( lensflare );
+            }
+            addLight( -10, 6.5, -10 );
+
+            // spotlight
+            let spotLight = new THREE.SpotLight(0xffffff, 1, 100, .15, .5, 0)
+            spotLight.position.set(-5, 5, -5);
+            spotLight.target = dr;
+            spotLight.power = 10;
+            spotLight.castShadow = true;
+            spotLight.shadow.focus = 1;
+            drumscene.add(spotLight);
+            let light1 = new THREE.AmbientLight(0xffffff, 0.1);   
+            drumscene.add(light1);
+
+            //燈管
+            RectAreaLightUniformsLib.init()
+            const rectLight = new THREE.RectAreaLight(0xffffff, 8, 3, 1);
+            rectLight.position.set( 3, 0, 0 );
+            rectLight.lookAt( 0, 0, 0 );
+            drumscene.add( rectLight );
+            const box = new THREE.BoxGeometry(3, .05, .05);
+            const bT = new THREE.MeshStandardMaterial({
+                color: 0xc0c0c0,
+                emissive: 0xc0c0c0,
+                emissiveIntensity: 1,
+            });
+            const LightBox = new THREE.Mesh(box, bT);
+            LightBox.rotateY(Math.PI/-2);
+            LightBox.position.set(3, .025,0);
+            drumscene.add(LightBox)
+
+            const rectLight2 = new THREE.RectAreaLight(0xffffff, 8, 3, 1);
+            rectLight2.position.set( -3, 0, 0 );
+            rectLight2.lookAt( 0, 0, 0 );
+            drumscene.add( rectLight2 );
+            const box2 = new THREE.BoxGeometry(3, .05, .05);
+            const LightBox2 = new THREE.Mesh(box2, bT);
+            LightBox2.rotateY(Math.PI/-2);
+            LightBox2.position.set(-3, .025,0);
+            drumscene.add(LightBox2)
+
+            const rectLight3 = new THREE.RectAreaLight(0xffffff, 8, 3, 1);
+            rectLight3.position.set( 0, 0, 3 );
+            rectLight3.lookAt( 0, 0, 0 );
+            drumscene.add( rectLight3 );
+            const box3 = new THREE.BoxGeometry(3, .05, .05);
+            const LightBox3 = new THREE.Mesh(box3, bT);
+            LightBox3.position.set(0, .025,3);
+            drumscene.add(LightBox3)
+
+            const rectLight4 = new THREE.RectAreaLight(0xffffff, 8, 3, 1);
+            rectLight4.position.set( 0, 0, -3 );
+            rectLight4.lookAt( 0, 0, 0 );
+            drumscene.add( rectLight4 );
+            const box4 = new THREE.BoxGeometry(3, .05, .05);
+            const LightBox4 = new THREE.Mesh(box4, bT);
+            LightBox4.position.set(0, .025, -3);
+            drumscene.add(LightBox4);
+
+            document.body.appendChild(drumrenderer.domElement)
+            /* const controls = new OrbitControls(drumcamera, drumrenderer.domElement); */
+            /* let axes = new THREE.AxesHelper(20)
+            drumscene.add(axes) */
+            const clock = new THREE.Clock();
+            function animation(){
+                const delta = clock.getDelta();
+                requestAnimationFrame(animation)
+                render();
+                /* controls.update() */
+            }
+
+            function render() {
+                drumrenderer.render(drumscene, drumcamera)  
+            }
+
+            window.addEventListener('resize', function() {
+                drumcamera.aspect = window.innerWidth / window.innerHeight
+                drumcamera.updateProjectionMatrix()
+                drumrenderer.setSize(window.innerWidth, window.innerHeight)
+            })
+            animation()
+            //動畫
+            
+            window.addEventListener('load', function(){
+                gsap.to($$('.intro'), {
+                    opacity: 0,
+                    duration: 2,
+                    display: 'none',
+                })
+                gsap.fromTo($$('.logo'), {
+                    opacity: 0,
+                }, {
+                    opacity: 1,
+                    duration: .5,
+                    delay: 5.5,
+                })
+                gsap.fromTo(drumcamera.position, {
+                    x: 1000,
+                    y: 0,
+                    z: 1000,
+                }, {
+                    x: 2,
+                    y: 3,
+                    z: 2,
+                    ease: "power1.out",
+                    duration: 4,
+                    delay: 1,
+                })
+                gsap.to(drumcamera.position, {
+                    x: 6,
+                    y: .5,
+                    z: 6,
+                    ease: "power2.in",
+                    duration: 1,
+                    delay: 5,
+                })
+                gsap.from(anchor[0], {
+                    scale: 0,
+                    opacity: 0,
+                    duration: .5,
+                    delay: 5.5,
+                })
+            })
+            anchor[0].addEventListener('click', function(){
+                gsap.to(anchor[0], {
+                    opacity: 0,
+                    display: 'none',
+                    duration: .5,
+                })
+                gsap.to(drumcamera.position, {
+                    x: 2,
+                    y: .5,
+                    z: .5,
+                    duration: 2,
+                })
+                gsap.to(drumcamera.rotation, {
+                    x: 0,
+                    y: Math.PI/2,
+                    z: 0,
+                    duration: 1.5,
+                })
+                gsap.to($$('.fillinA'), {
+                    left: '-66.666666%',
+                    background: `linear-gradient(#a9a9a9, #696969)`,
+                    duration: .5,
+                    delay: 1,
+                })
+                gsap.to($$('#sceneDrum'), {
+                    left: '16.666666%',
+                    duration: .5,
+                    delay: 1,
+                })
+                gsap.to($$('.containerAbout'), {
+                    top: 0,
+                    duration: 0,
+                })
+                gsap.to($$('.aboutIndex h2'), {
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                    duration: 1,
+                    delay: 1,
+                })
+                gsap.to($$('.aboutIndex p'), {
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                    duration: 1,
+                    delay: 1.5,
+                })
+                gsap.to(anchor[1], {
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                    duration: 1,
+                    delay: 1.5,
+                })
+                gsap.to(anchorRound[0], {
+                    opacity: 1,
+                    duration: 1,
+                    delay: 1,
+                })
+            })
+            
+            const step = document.querySelectorAll('.step');
+            const stepH3 = document.querySelectorAll('.step h3');
+            const stepP = document.querySelectorAll('.step p');
+            const stepImg = document.querySelectorAll('.stepPic');
+            anchor[1].addEventListener('click', function(){
+                gsap.to($$('.fillinA'), {
+                    left: '-100%',
+                    duration: .5,
+                })
+                gsap.to($$('.containerAbout'), {
+                    top: '-100%',
+                    duration: 1,
+                })
+                gsap.to($$('.aboutIndex h2'), {
+                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                    duration: 1,
+                })
+                gsap.to($$('.aboutIndex p'), {
+                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                    duration: 1,
+                })
+                gsap.to(anchor[1], {
+                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                    duration: 1,
+                })
+                gsap.to(anchorRound[0], {
+                    opacity: 0,
+                    duration: 1,
+                })
+                gsap.to($$('#sceneDrum'), {
+                    left: '0%',
+                    duration: .5,
+                })
+                gsap.to(drumcamera.position, {
+                    x: .2,
+                    y: 2,
+                    z: 1.5,
+                    duration: 2,
+                })
+                gsap.to(drumcamera.rotation, {
+                    x: -Math.PI*.33,
+                    y: 0,
+                    z: 0,
+                    duration: 1.5,
+                })
+                gsap.to($$('.containerStep'), {
+                    left: 0,
+                    duration: 0
+                })
+                gsap.to($$('.containerStep'), {
+                    opacity: 1,
+                    duration: 1
+                })
+                gsap.to(step[0], {
+                    top: 0,
+                    duration: 0
+                })
+                gsap.to(step[0], {
+                    opacity: 1,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                gsap.to($$('.manulHint'), {
+                    display: 'block',
+                    delay: 2,
+                })
+            })
+            $$('.manulHint').addEventListener('click', function(){
+                this.style.display = 'none';
+            })
+            stepImg[0].addEventListener('click', function(){
+                gsap.to(step[0], {
+                    opacity: 0,
+                    duration: .5,
+                })
+                gsap.to(step[0], {
+                    top: '-100%',
+                    duration: .5,
+                })
+                gsap.to(step[1], {
+                    top: 0,
+                    opacity: 1,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                gsap.to(drumcamera.position, {
+                    x: -.3,
+                    y: .55,
+                    z: -.3,
+                    duration: 2,
+                })
+                gsap.to(drumcamera.rotation, {
+                    x: 0,
+                    y: -Math.PI*.75,
+                    z: 0,
+                    duration: 2.5,
+                })
+            })
+            stepImg[1].addEventListener('click', function(){
+                gsap.to(step[1], {
+                    opacity: 0,
+                    duration: .5,
+                })
+                gsap.to(step[1], {
+                    top: '-100%',
+                    duration: .5,
+                })
+                gsap.to(step[2], {
+                    top: 0,
+                    opacity: 1,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                gsap.to(drumcamera.position, {
+                    x: .9,
+                    y: .7,
+                    z: .9,
+                    duration: 2,
+                })
+                gsap.to(drumcamera.rotation, {
+                    x: 0,
+                    y: Math.PI*.25,
+                    z: 0,
+                    duration: 1.5,
+                })
+            })
+            stepImg[2].addEventListener('click', function(){
+                gsap.to(step[2], {
+                    opacity: 0,
+                    duration: .5,
+                })
+                gsap.to(step[2], {
+                    top: '-100%',
+                    duration: .5,
+                })
+                gsap.to(step[3], {
+                    top: 0,
+                    opacity: 1,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                gsap.to(drumcamera.position, {
+                    x: -3,
+                    y: 2.75,
+                    z: 2.5,
+                    duration: 2,
+                })
+                gsap.to(drumcamera.rotation, {
+                    x: 0,
+                    y: -.03*Math.PI,
+                    z: 0,
+                    duration: 1.5,
+                })
+            })
+            stepImg[3].addEventListener('click', function(){
+                gsap.to(step[3], {
+                    opacity: 0,
+                    duration: .5,
+                })
+                gsap.to(step[3], {
+                    top: '-100%',
+                    duration: .5,
+                })
+                gsap.to($$('.containerStep'), {
+                    left: '100%',
+                    duration: 0,
+                    delay: 1,
+                })
+                gsap.to($$('.containerStep'), {
+                    opacity: 0,
+                    duration: 1
+                })
+                gsap.to($$('.uiODS'), {
+                    left: 0,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                gsap.to($$('.drkit'), {
+                    left: 0,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                gsap.to(drumcamera.position, {
+                    x: -1,
+                    y: .5,
+                    z: -1,
+                    duration: 2,
+                })
+                gsap.to(drumcamera.rotation, {
+                    x: 0,
+                    y: -.75*Math.PI,
+                    z: 0,
+                    duration: 1.5,
+                })
+            })
+
+
+            //------toDrum------//
+            $$('#toDrum').addEventListener('click', function(){
+                //navHide
+                gsap.to($$(".navHeader"), {
+                    left: '-100%',
+                    duration: .5,
+                })
+                $$(".logo").style.animation = "";
+                //cameraMovement
+                gsap.to(drumcamera.position, {
+                    x: -1,
+                    y: .5,
+                    z: -1,
+                    duration: 2,
+                })
+                gsap.to(drumcamera.rotation, {
+                    x: 0,
+                    y: -.75*Math.PI,
+                    z: 0,
+                    duration: 1.5,
+                })
+                //uiODS
+                gsap.to($$('.uiODS'), {
+                    left: 0,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                gsap.to($$('.drkit'), {
+                    left: 0,
+                    duration: .5,
+                    delay: 1.5,
+                })
+                //fromP1
+                if(anchor[0].style.opacity != 0){
+                    gsap.to(anchor[0], {
+                        opacity: 0,
+                        display: 'none',
+                        duration: .5,
+                    })
+                }
+                //fromP2
+                if($$('.containerAbout').style.top == "0px"){
+                    gsap.to($$('.containerAbout'), {
+                        top: '-100%',
+                        duration: .5,
+                    })
+                    gsap.to($$('.aboutIndex h2'), {
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                        duration: .5,
+                    })
+                    gsap.to($$('.aboutIndex p'), {
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                        duration: .5,
+                    })
+                    gsap.to(anchor[1], {
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                        duration: .5,
+                    })
+                    gsap.to(anchorRound[0], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to($$('#sceneDrum'), {
+                        left: '0%',
+                        duration: .5,
+                    })
+                    gsap.to($$('.fillinA'), {
+                        left: '-100%',
+                        duration: .5,
+                    })
+                }
+                //fromP3
+                if($$('.containerShop').style.left == "0%"){
+                    loadingAni()
+                    gsap.to($$('.containerShop'), {
+                        left: '-100%',
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to($$('.containerShop'), {
+                        top: '-1000%',
+                        delay: .5,
+                    })
+                    gsap.to(anchorRound[1], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to($$('#sceneDrum'), {
+                        left: '0%',
+                        duration: .5,
+                    })
+                    gsap.to($$('.fillinA'), {
+                        left: '-100%',
+                        duration: .5,
+                    })
+                }
+                //fromP4
+                if($$('.containerCommo').style.left == '0%'){
+                    loadingAni()
+                    gsap.to($$('.containerCommo'),{
+                        left: '100%',
+                        duration: 0,
+                        delay: .5,
+                    })
+                    gsap.to($$('#sceneCommo'),{
+                        left: '100%',
+                        duration: 0,
+                        delay: .5,
+                    })
+                    gsap.to($$('#sceneTube'),{
+                        left: '100%',
+                        duration: 0,
+                        delay: .5,
+                    })
+                    gsap.to(anchorRound[2], {
+                        opacity: 0,
+                        duration: 1,
+                    })
+                }
+                //fromstep
+                if($$('.containerStep').style.left == '0px'){
+                    gsap.to(step[0], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[1], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[1], {
+                        top: '-100%',
+                        duration: .5,
+                    })
+                    gsap.to(step[2], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[2], {
+                        top: '-100%',
+                        duration: .5,
+                    })
+                    gsap.to(step[3], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[3], {
+                        top: '-100%',
+                        duration: .5,
+                    })
+                    gsap.to($$('.containerStep'), {
+                        left: '100%',
+                        duration: 0,
+                        delay: 1,
+                    })
+                    gsap.to($$('.containerStep'), {
+                        opacity: 0,
+                        duration: 1
+                    })
+                    $$('.manulHint').style.display = 'none';
+                }
+            })
+
+            //------toShop------//
+            $$('#toShop').addEventListener('click', function(){
+                //navHide
+                gsap.to($$(".navHeader"), {
+                        left: '-100%',
+                        duration: .5,
+                    })
+                $$(".logo").style.animation = "";
+                //shopIn
+                if($$('.containerShop').style.top != "0%"){
+                    gsap.to($$('.fillinA'), {
+                        background: 'linear-gradient(0deg, #6a11cb, #2575fc)',
+                        left: '0%',
+                        duration: .5,
+                        delay: .5,
+                    })
+                    gsap.to($$('.containerShop'), {
+                        top: '0%',
+                        left: '-100%',
+                        duration: 0,
+                    })
+                    gsap.to($$('.containerShop'), {
+                        left: '0%',
+                        opacity: 1,
+                        duration: .5,
+                        delay: .5,
+                    })
+                    gsap.to(anchorRound[1], {
+                        opacity: 1,
+                        duration: 1,
+                        delay: 1,
+                    })
+                    wordIn(ShopH2);
+                    wordIn($$('.shopTitle p'));
+                    wordIn($$('.shopTitle a'));
+                }
+                //cameraMovement
+                if($$('#sceneDrum').style.left != "100%"){
+                    gsap.to($$('#sceneDrum'), {
+                        left: '100%',
+                        duration: 1,
+                    })
+                    gsap.to(drumcamera.position, {
+                        x: 2,
+                        y: .5,
+                        z: .5,
+                        duration: 2,
+                    })
+                    gsap.to(drumcamera.rotation, {
+                        x: 0,
+                        y: Math.PI/2,
+                        z: 0,
+                        duration: 1.5,
+                    })
+                }
+                //fromP1
+                if(anchor[0].style.opacity != 0){
+                    loadingAni();
+                    gsap.to(anchor[0], {
+                        opacity: 0,
+                        display: 'none',
+                        duration: .5,
+                    })
+                }
+                //fromP2
+                if($$('.containerAbout').style.top == "0px"){
+                    gsap.to($$('.containerAbout'), {
+                        top: '-100%',
+                        duration: 1,
+                    })
+                    gsap.to($$('.aboutIndex h2'), {
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                        duration: 1,
+                    })
+                    gsap.to($$('.aboutIndex p'), {
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                        duration: 1,
+                    })
+                    gsap.to(anchor[1], {
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                        duration: 1,
+                    })
+                    gsap.to(anchorRound[0], {
+                        opacity: 0,
+                        duration: 1,
+                    })
+                }
+                //fromP4
+                if($$('.containerCommo').style.left == '0%'){
+                    gsap.to($$('.fillinB'), {
+                        left: '0%',
+                        duration: .5,
+                    })
+                    gsap.to($$('.containerCommo'),{
+                        left: '100%',
+                        duration: 0,
+                        delay: .5,
+                    })
+                    gsap.to($$('#sceneCommo'),{
+                        left: '100%',
+                        duration: 0,
+                        delay: .5,
+                    })
+                    gsap.to($$('#sceneTube'),{
+                        left: '100%',
+                        duration: 0,
+                        delay: .5,
+                    })
+                    gsap.to($$('.fillinB'), {
+                        left: '100%',
+                        delay: .5,
+                        duration: .5,
+                    })
+                    gsap.to(anchorRound[2], {
+                        opacity: 0,
+                        duration: 1,
+                    })
+                }
+                //fromStep
+                if($$('.containerStep').style.left == '0px'){
+                    loadingAni();
+                    gsap.to(step[0], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[1], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[1], {
+                        top: '-100%',
+                        duration: .5,
+                    })
+                    gsap.to(step[2], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[2], {
+                        top: '-100%',
+                        duration: .5,
+                    })
+                    gsap.to(step[3], {
+                        opacity: 0,
+                        duration: .5,
+                    })
+                    gsap.to(step[3], {
+                        top: '-100%',
+                        duration: .5,
+                    })
+                    gsap.to($$('.containerStep'), {
+                        left: '100%',
+                        duration: 0,
+                        delay: 1,
+                    })
+                    gsap.to($$('.containerStep'), {
+                        opacity: 0,
+                        duration: 1
+                    })
+                    $$('.manulHint').style.display = 'none';
+                }
+                //fromOds
+                if($$('.uiODS').style.left != '-500%' || $$('.drkit').style.left != '-100%'){
+                    loadingAni();
+                    gsap.to($$('.uiODS'), {
+                        left: '-500%',
+                        duration: .5,
+                    })
+                    gsap.to($$('.drkit'), {
+                        left: '-100%',
+                        duration: .5,
+                    })
+                }
+            })
+            
+        }
+        drumInit()
+        
+        function commoInit(){
+            // 渲染器
+            let commorenderer = new THREE.WebGLRenderer({
+                canvas: document.querySelector("#sceneCommo"),
+                alpha: true,
+            });
+            commorenderer.setSize(window.innerWidth, window.innerHeight);
+            
+            // 場景
+            let commoscene = new THREE.Scene();
+
+            // 相機
+            let commocamera = new THREE.PerspectiveCamera(70, ww / wh, 0.001, 10);
+            commocamera.position.set(.6, 1.3,0)
+            commocamera.lookAt(0, .3,0)
+            const controls = new OrbitControls(commocamera, commorenderer.domElement);
+            controls.enableZoom = false;
+            controls.enableDamping = true;
+            controls.dampingFactor = .25;
+            controls.autoRotate = true;
+            controls.enablePan = false;
+            controls.maxPolarAngle = Math.PI/2;
+            controls.minPolarAngle = Math.PI/4;
+            
+            // 場景物件
+            // drum
+            const loader = new GLTFLoader();
+            const dr = new THREE.Object3D(
+                loader.load('./bassdrum001/scene.gltf', function ( gltf ) {
+                    const drObj = gltf.scene;
+                    drObj.position.set(0, -.3, 0);
+                    drObj.rotateY(Math.PI/4);
+                    drObj.traverse(function(node) {
+                        if (node.isMesh) {
+                            node.material.roughness = .5
+                            node.material.metalness = .5
+                            node.material.transparent = false
+                        }
+                    })
+                commoscene.add( gltf.scene );
+                }, undefined, function ( error ) {
+                    console.error( error );
+                }
+            ));
+            const lightL = new THREE.PointLight( 0xffcc99, 5, 10 );
+            lightL.position.set( 1, 2, 1 );
+            commoscene.add( lightL );
+            const lightR = new THREE.PointLight( 0xffffff, 5, 10 );
+            lightR.position.set( .6, 1.3, 0 );
+            commoscene.add( lightR );
+            let light1 = new THREE.AmbientLight(0xffffff, 0.5);   
+            commoscene.add(light1);
+            function animation(){
+                requestAnimationFrame(animation)
+                render()
+                controls.update()
+            }
+
+            function render() {
+                commorenderer.render(commoscene, commocamera)  
+            }
+
+            window.addEventListener('resize', function() {
+                commocamera.aspect = window.innerWidth / window.innerHeight
+                commocamera.updateProjectionMatrix()
+                commorenderer.setSize(window.innerWidth, window.innerHeight)
+            })
+            animation()
+        }
+        commoInit()
+
+        //動畫
+        //sceneTube場景延遲
+        function tubeCount(){
+            setTimeout(tubeInit, 600);
+        }
+        function loadingBg(){
+            gsap.to($$('.loading'), {
+                opacity: 1,
+                duration: .5,
+            })
+            gsap.to($$('.loading'), {
+                opacity: 0,
+                delay: 3,
+                duration: 0,
+            })
+        }
+        function loadingAni(){
+            gsap.to($$('.fillinB'), {
+                left: '0',
+                duration: .5,
+            });
+            loadingBg();
+            gsap.to($$('.fillinB'), {
+                left: '100%',
+                delay: 1,
+                duration: .5,
+            });
+        }
+        anchorRound[0].addEventListener('click', function(){
+                gsap.to($$('.containerAbout'), {
+                    top: '-100%',
+                    duration: 1,
+                })
+                gsap.to($$('.aboutIndex h2'), {
+                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                    duration: 1,
+                })
+                gsap.to($$('.aboutIndex p'), {
+                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                    duration: 1,
+                })
+                gsap.to(anchor[1], {
+                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)',
+                    duration: 1,
+                })
+                gsap.to(anchorRound[0], {
+                    opacity: 0,
+                    duration: 1,
+                })
+                gsap.to(anchorRound[1], {
+                    opacity: 1,
+                    duration: 1,
+                    delay: 1,
+                })
+                gsap.to($$('#sceneDrum'), {
+                    left: '100%',
+                    duration: 1,
+                })
+                gsap.to($$('.fillinA'), {
+                    background: 'linear-gradient(0deg, #6a11cb, #2575fc)',
+                    left: '0%',
+                    duration: 1,
+                })
+                gsap.to($$('.containerShop'), {
+                    top: '0%',
+                    left: '-100%',
+                    duration: 0,
+                })
+                gsap.to($$('.containerShop'), {
+                    left: '0%',
+                    opacity: 1,
+                    duration: .5,
+                    delay: .5,
+                })
+                wordIn(ShopH2);
+                wordIn($$('.shopTitle p'));
+                wordIn($$('.shopTitle a'));
+            })
+            anchorRound[1].addEventListener('click', function(){
+                gsap.to($$('.containerAbout'), {
+                    top: 0,
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('.aboutIndex h2'), {
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                    duration: .5,
+                    delay: .5,
+                })
+                gsap.to($$('.aboutIndex p'), {
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                    duration: .5,
+                    delay: 1,
+                })
+                gsap.to(anchor[1], {
+                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+                    duration: .5,
+                    delay: 1,
+                })
+                gsap.to(anchorRound[0], {
+                    opacity: 1,
+                    duration: 1,
+                    delay: 1,
+                })
+                gsap.to(anchorRound[1], {
+                    opacity: 0,
+                    duration: 1,
+                })
+                gsap.to($$('#sceneDrum'), {
+                    left: '16.666666%',
+                    duration: 1,
+                })
+                gsap.to($$('.fillinA'), {
+                    left: '-66.666666%',
+                    background: `linear-gradient(#a9a9a9, #696969)`,
+                    duration: 1,
+                })
+                gsap.to($$('.containerShop'), {
+                    left: '-100%',
+                    opacity: 0,
+                    duration: .5,
+                })
+                gsap.to($$('.containerShop'), {
+                    top: '-1000%',
+                    delay: .5,
+                })
+            })
+            anchor[2].addEventListener('click', function(){
+                tubeCount();
+                loadingBg();
+                gsap.to($$('.fillinB'), {
+                    left: '0%',
+                    duration: .5,
+                })
+                gsap.to($$('.fillinA'), {
+                    left: '-100%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('.containerShop'), {
+                    top: '-1000%',
+                    opacity: 0,
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('.containerCommo'),{
+                    left: '0%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('#sceneCommo'),{
+                    left: '0%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('#sceneTube'),{
+                    left: '0%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('.fillinB'), {
+                    left: '-100%',
+                    delay: 3,
+                    duration: .5,
+                })
+                gsap.to(anchorRound[1], {
+                    opacity: 0,
+                    duration: 1,
+                })
+                gsap.to(anchorRound[2], {
+                    opacity: 1,
+                    duration: 1,
+                    delay: 1,
+                })
+            })
+            anchorRound[2].addEventListener('click', function(){
+                gsap.to($$('.fillinB'), {
+                    left: '0%',
+                    duration: .5,
+                })
+                gsap.to($$('.containerCommo'),{
+                    left: '100%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('#sceneCommo'),{
+                    left: '100%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('#sceneTube'),{
+                    left: '100%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('.fillinB'), {
+                    left: '100%',
+                    delay: .5,
+                    duration: .5,
+                })
+                gsap.to(anchorRound[2], {
+                    opacity: 0,
+                    duration: 1,
+                })
+                gsap.to($$('.fillinA'), {
+                    left: '0%',
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to($$('.containerShop'), {
+                    top: '0%',
+                    opacity: 1,
+                    duration: 0,
+                    delay: .5,
+                })
+                gsap.to(anchorRound[1], {
+                    opacity: 1,
+                    duration: 1,
+                    delay: 1,
+                })
+                wordIn(ShopH2);
+                wordIn($$('.shopTitle p'));
+                wordIn($$('.shopTitle a'));
+            })
+        //選單控制
+        function cymbalUp(){
+            gsap.to($$('.cymbal p'), {
+                color: '#fa71cd',
+            })
+            gsap.to($$('.cymbalSelect'), {
+                opacity: 1,
+                top: '-140px',
+                duration: .5,
+            })
+        }
+        function cymbalDown(){
+            gsap.to($$('.cymbal p'), {
+                color: '#fff',
+            })
+            gsap.to($$('.cymbalSelect'), {
+                opacity: 0,
+                top: '135%',
+                duration: .5,
+            })
+        }
+        function drumUp(){
+            gsap.to($$('.drum p'), {
+                color: '#fa71cd',
+            })
+            gsap.to($$('.drumSelect'), {
+                opacity: 1,
+                top: '-217px',
+                duration: .5,
+            })
+        }
+        function drumDown(){
+            gsap.to($$('.drum p'), {
+                color: '#fff',
+            })
+            gsap.to($$('.drumSelect'), {
+                opacity: 0,
+                top: '135%',
+                duration: .5,
+            })
+        }
+        function midiUp(){
+            gsap.to($$('.midi p'), {
+                color: '#fa71cd',
+            })
+            gsap.to($$('.midiSelect'), {
+                opacity: 1,
+                top: '-190px',
+                duration: .5,
+            })
+        }
+        function midiDown(){
+            gsap.to($$('.midi p'), {
+                color: '#fff',
+            })
+            gsap.to($$('.midiSelect'), {
+                opacity: 0,
+                top: '135%',
+                duration: .5,
+            })
+        }
+        function clickUp(){
+            gsap.to($$('.click p'), {
+                color: '#fa71cd',
+            })
+            gsap.to($$('.clickSelect'), {
+                opacity: 1,
+                top: '-103px',
+                duration: .5,
+            })
+        }
+        function clickDown(){
+            gsap.to($$('.click p'), {
+                color: '#fff',
+            })
+            gsap.to($$('.clickSelect'), {
+                opacity: 0,
+                top: '135%',
+                duration: .5,
+            })
+        }
+        $$('.cymbalPic').addEventListener('click', function(){
+            drumDown();
+            midiDown();
+            clickDown();
+            if($$('.cymbalSelect').style.top == '-140px'){
+                cymbalDown()
+            }else{
+                cymbalUp()
+            } 
+        })
+        $$('.drumPic').addEventListener('click', function(){
+            cymbalDown();
+            midiDown();
+            clickDown();
+            if($$('.drumSelect').style.top == '-217px'){
+                drumDown();
+            }else{
+                drumUp();
+            } 
+        })
+        $$('.midiPic').addEventListener('click', function(){
+            cymbalDown();
+            drumDown();
+            clickDown();
+            if($$('.midiSelect').style.top == '-190px'){
+                midiDown();
+            }else{
+                midiUp();
+            } 
+        })
+        $$('.clickPic').addEventListener('click', function(){
+            cymbalDown();
+            drumDown();
+            midiDown();
+            if($$('.clickSelect').style.top == '-103px'){
+               clickDown();
+            }else{
+                clickUp();
+            } 
+        })
+        const metro = document.getElementById('click')
+        metro.addEventListener('change', function(){
+            $$('.clickSpeed').innerHTML = metro.value + 'bpm'
+        })
+        
+    </script>
+    
+</body>
+</html>

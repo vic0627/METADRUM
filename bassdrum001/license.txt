@@ -1,0 +1,11 @@
+Model Information:
+* title:	BassDrum001
+* source:	https://sketchfab.com/3d-models/bassdrum001-eee7e3d6e6e6413081a1c65213e1c505
+* author:	Patradarsh Productions (https://sketchfab.com/patisawesome200)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "BassDrum001" (https://sketchfab.com/3d-models/bassdrum001-eee7e3d6e6e6413081a1c65213e1c505) by Patradarsh Productions (https://sketchfab.com/patisawesome200) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
